@@ -19,7 +19,7 @@ namespace rezervacka
     /// </summary>
     public partial class ReservationInfo : Window
     {
-        public ReservationInfo()
+        public ReservationInfo(string filmName, string seatType, string doplnky)
         {
             InitializeComponent();
         }

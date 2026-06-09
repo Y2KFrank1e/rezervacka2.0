@@ -58,8 +58,9 @@ namespace rezervacka
             if (cbGlasses.IsChecked == true)
             {
                 doplnky += cbGlasses.Content + " ";
-            } 
-            ReservationInfo reservationInfo = ReservationInfo()
+            }
+            ReservationInfo infoWindow = new ReservationInfo(filmName, seatType, doplnky);
+            infoWindow.Show();
         }
     }
 }
