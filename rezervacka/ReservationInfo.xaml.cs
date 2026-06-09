@@ -22,6 +22,9 @@ namespace rezervacka
         public ReservationInfo(string filmName, string seatType, string doplnky)
         {
             InitializeComponent();
+            txtFilm.Text = filmName;
+            txtSedadlo.Text = seatType;
+            txtDoplny.Text = doplnky;
         }
     }
 }
