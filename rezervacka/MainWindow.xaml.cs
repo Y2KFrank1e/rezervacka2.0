@@ -9,7 +9,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace rezervaceKina
+namespace rezervacka
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -32,6 +32,8 @@ namespace rezervaceKina
             }
 
             string filmName = selectedFilm.Content.ToString();
+            string seatType = "";
+            /*
             if (rbPremium.IsChecked == true)
             {
 
@@ -40,6 +42,11 @@ namespace rezervaceKina
             {
 
             }
+            */
+
+            seatType = rbPremium.IsChecked == true ? "premium" : "standard";
+
+            //doplňky
         }
     }
 }
