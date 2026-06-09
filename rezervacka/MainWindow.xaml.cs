@@ -45,8 +45,21 @@ namespace rezervacka
             */
 
             seatType = rbPremium.IsChecked == true ? "premium" : "standard";
-
+            string doplnky = "";
             //doplňky
+            if (cbDrink.IsChecked == true)
+            {
+                doplnky += cbDrink.Content + " ";
+            }
+            if (cbFood.IsChecked == true)
+            {
+                doplnky += cbFood.Content + " ";
+            }
+            if (cbGlasses.IsChecked == true)
+            {
+                doplnky += cbGlasses.Content + " ";
+            } 
+            ReservationInfo reservationInfo = ReservationInfo()
         }
     }
 }
